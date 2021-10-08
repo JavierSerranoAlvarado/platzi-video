@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "live": "live-server",
     "buildW": "webpack",
+    "buildwwatch": "webpack --watch",
     "buildB": "babel src -d lib"
   },
   "author": "",
