@@ -2,12 +2,13 @@
   "name": "platzi-video",
   "version": "1.0.0",
   "description": "",
+  "main" : "index.html",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "live": "live-server",
-    "buildW": "webpack",
-    "buildwwatch": "webpack --watch",
+    "start": "live-server",
+    "build": "webpack",
+    "buildWatch": "webpack --watch",
     "buildB": "babel src -d lib"
   },
   "author": "",
