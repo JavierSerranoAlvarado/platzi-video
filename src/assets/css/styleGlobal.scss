@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  color: white;
+  font-family: monospace, serif;
+}
+
+body {
+  /* background: rgb(3,26,107); */
+  background: linear-gradient(rgba(0, 67, 133,1), rgba(5, 178, 220, 1));
+  background-attachment: fixed;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(0, 67, 133);
+}
+
+.navbar-img {
+  height: 5rem;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar--open {
+  display: none;
+}
+
+.navbar-plegable {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-plegable a {
+  text-decoration: none;
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  height: calc(100% - 2rem);
+}
+
+
+.navbar-plegable a:hover {
+  color: blue;
+}
+
+
+.navbar-items li {
+  list-style: none;
+  height: 100%;
+  text-align: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer--item {
+  margin: 0 1rem 0 0;
+  text-decoration: none;
+}
+
+.footer--item:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 544px) {
+  .navbar {
+    z-index: 1;
+  }
+
+  .navbar-plegable {
+    display: none;
+    margin: 0;
+  }
+
+  .navbar--open {
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+/*   .navbar-menu:hover .navbar--open {
+    visibility: 0;
+    pointer-events: none;
+  }  */
+/* 
+  .navbar--open:hover ~ .navbar--close,
+  .navbar-menu:hover .navbar--close {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:rgb(0, 67, 133);
+  }
+
+  .navbar--open:hover{
+    opacity: 0;
+    pointer-events: none;
+
+  }
+
+
+  .navbar--close:hover ~ .navbar-plegable {
+    display: none;
+  } */
+
+.navbar-plegable--open {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top , #031A6B,#004385);
+    height: calc(100% - -6rem);
+    overflow: scroll;
+    z-index: 100;
+    position: absolute;
+  }
+
+  .navbar-plegable a {
+    padding: 1.5rem;
+    border: solid 1px white;
+    border-radius: 0;
+    text-decoration: none;
+  display: block;
+  text-align: center; 
+  height: auto;
+  }
+
+  .navbar-items li {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer__container {
+    flex-flow: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+
+  .footer--item:hover {
+    text-decoration: underline;
+  }
+
+  .footer--item {
+    margin: 0.6rem 1rem 0 0;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PlatziMediaPlayer.js</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e5cc30c24.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/styleGlobal.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styleIndex.css" />
+    <link rel="stylesheet" href="./src/assets/css/index.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img class="navbar-img" src="./assets/image/LogoTiendaDeJavier.png" />
+      </a>
+
+      <ul class="navbar-items">
+        <li class="navbar-menu">
+          <a id="menu-desplegable" class="navbar--open">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="navbar-plegable" id="navbar-plegable">
+            <li class="navbar--active">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./login.html">Inicia Sesion</a>
+            </li>
+            <li>
+              <a href="./productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>PlatziMediaPlayer.js</h1>
+      <p>An extensible media player.</p>
+    </header>
+
+    <main class="container">
+      <video id="video__principal" class="movie">
+        <source src="../src/assets/video/CbtisGate.mp4" />
+      </video>
+
+      <button id="btn__play">Play/Pause</button>
+
+      <script type="text/javascript" src="../dist/main.js"></script>
+      <!-- <script src="../src/js/index.js"></script> -->
+    </main>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>

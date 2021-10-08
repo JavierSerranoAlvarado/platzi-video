@@ -1,0 +1,64 @@
+.register{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content:center;
+    margin:2rem 0 0 0;
+}
+
+.register__container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    background:rgba(0,0,0,0.4);
+    border:solid 1px #ccc;
+    border-radius:1rem;
+    padding: 2rem;
+    height:30rem;
+
+}
+
+.register--form{
+    margin-bottom: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.register--input{
+    background:none;
+    margin: 0 0 1rem 0;
+    color: #000;
+    border: none;
+    border-bottom: solid 1px white;
+    padding: 1rem;
+    outline: none;
+}
+
+.register--terminos{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.register--submit{
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border: none;
+    background: rgb(5, 178, 220,0.5);
+    outline: none;
+    border-radius: 2rem;
+
+}
+
+.register--submit:hover{
+    background:rgba(5, 178, 220, 0.9);
+}
+
+@media only screen and (max-width: 544px){
+    .register__container{
+        border:none;
+        border-radius: 0;
+        background: none;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e5cc30c24.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styleGlobal.css" />
+    <link rel="stylesheet" href="./assets/css/styleLogin.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img class="navbar-img" src="./assets/image/LogoTiendaDeJavier.png" />
+      </a>
+
+      <ul class="navbar-items">
+        <li class="navbar-menu">
+          <a id="menu-desplegable" class="navbar--open">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="navbar-plegable" id="navbar-plegable">
+            <li class="navbar--active">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./login.html">Inicia Sesion</a>
+            </li>
+            <li>
+              <a href="./productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+    <section class="login">
+      <h2>Inicio de Sesion</h2>
+      <div class="login__container">
+        <form id="login__container--form" class="login__container--form">
+          <input
+            id="login_email"
+            type="email"
+            class="login__container--input"
+            placeholder="Correo Electronico"
+            autocomplete="email"
+          />
+          <input
+            id="login-pass"
+            type="password"
+            class="login__container--input"
+            placeholder="Contraseña"
+          />
+          <input
+            type="submit"
+            class="login__container--submit"
+            value="Iniciar Sesion"
+          />
+          <div class="login__container--remember">
+            <label for="remember"><input id="remember" type="checkbox" /> Recuerdame</label>
+            <a href="">Olvide mi Contraseña</a>
+          </div>
+        </form>
+
+        <section class="login__container--social">
+          <a href=""><i class="fab fa-google"></i>Inicia Sesion con Google</a>
+          <a href=""><i class="fab fa-twitter"></i>Inicia Sesion Con Twitter</a>
+        </section>
+        <section class="login__container--register">
+          <label>¿Aun no tienes cuenta? <a href="./register.html">Registrate</a></label>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer__container">
+      <a class="footer--item" href="">Terminos y Condiciones</a>
+      <a class="footer--item" href="">Declaracion de Privacidad</a>
+      <a class="footer--item" href="">Centro de Ayuda</a>
+      <a class="footer--item" href="">Preguntas Frecuentes</a>
+    </footer>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>

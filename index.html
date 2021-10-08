@@ -1,29 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>PlatziMediaPlayer.js</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e5cc30c24.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      type="text/css"
+      href="./src/assets/css/styleGlobal.css"
     />
-    <link rel="stylesheet" href="./src/assets/css/index.css" />
+    <link rel="stylesheet" href="./src/assets/css/styleIndex.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
-    <header>
-      <h1>PlatziMediaPlayer.js</h1>
-      <p>An extensible media player.</p>
-    </header>
+    <nav class="navbar">
+      <a href="./index.html">
+        <img
+          class="navbar-img"
+          src="./src/assets/image/LogoTiendaDeJavier.png"
+        />
+      </a>
 
-    <main class="container">
-      <video id="video__principal" class="movie">
-        <source src="./src/assets/video/CbtisGate.mp4" />
-      </video>
+      <ul class="navbar-items">
+        <li class="navbar-menu">
+          <a id="menu-desplegable" class="navbar--open">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="navbar-plegable" id="navbar-plegable">
+            <li class="navbar--active">
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./src/login.html">Inicia Sesion</a>
+            </li>
+            <li>
+              <a href="./src/productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="./src/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-      <button id="btn__play">Play/Pause</button>
+    <section class="buscador">
+      <div class="buscador__container">
+        <form class="buscador__container--form">
+          <h2>¿Buscabas algun producto?</h2>
+          <input type="text" class="buscador__container--input" />
+          <input type="button" class="buscador__container--btn" value="🔎" />
+        </form>
+      </div>
+    </section>
 
-      <script type="text/javascript" src="./dist/main.js"></script>
-      <!-- <script src="../src/js/index.js"></script> -->
-    </main>
+    <section class="carrusel">
+      <div class="carrusel-container">
+        <div class="carrusel-container--item">
+          <img
+            class="carrusel-container--img"
+            src="./src/assets/image/tazaAnime.jpg"
+          />
+          <div class="carrusel-container--details">
+            <p>Tazas de Anime</p>
+          </div>
+        </div>
+        <div class="carrusel-container--item">
+          <img
+            class="carrusel-container--img"
+            src="./src/assets/image/tazaComic.jpg"
+          />
+          <div class="carrusel-container--details">
+            <p>Tazas de Comics</p>
+          </div>
+        </div>
+        <div class="carrusel-container--item">
+          <img
+            class="carrusel-container--img"
+            src="./src/assets/image/tazaGlitter.jpg"
+          />
+          <div class="carrusel-container--details">
+            <p>Tazas Glitters</p>
+          </div>
+        </div>
+        <div class="carrusel-container--item">
+          <img
+            class="carrusel-container--img"
+            src="./src/assets/image/tazaGlitter.jpg"
+          />
+          <div class="carrusel-container--details">
+            <p>Tazas Glitters</p>
+          </div>
+        </div>
+        <div class="carrusel-container--item">
+          <img
+            class="carrusel-container--img"
+            src="./src/assets/image/tazaGlitter.jpg"
+          />
+          <div class="carrusel-container--details">
+            <p>Tazas Glitters</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer__container">
+      <a class="footer--item" href="">Terminos y Condiciones</a>
+      <a class="footer--item" href="">Declaracion de Privacidad</a>
+      <a class="footer--item" href="">Centro de Ayuda</a>
+      <a class="footer--item" href="">Preguntas Frecuentes</a>
+    </footer>
+    <script src="./dist/main.js"></script>
   </body>
 </html>

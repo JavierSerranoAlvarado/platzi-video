@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e5cc30c24.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styleGlobal.css" />
+    <link rel="stylesheet" href="./assets/css/styleRegister.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img class="navbar-img" src="./assets/image/LogoTiendaDeJavier.png" />
+      </a>
+
+      <ul class="navbar-items">
+        <li class="navbar-menu">
+          <a id="menu-desplegable" class="navbar--open">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="navbar-plegable" id="navbar-plegable">
+            <li class="navbar--active">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./login.html">Inicia Sesion</a>
+            </li>
+            <li>
+              <a href="./productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+    <section class="register">
+      <div class="register__container">
+        REGISTRAR
+        <form class="register--form">
+           <input class="register--input" type="email" placeholder="Correo Electronico" />
+          <input class="register--input" type="password" placeholder="Contraseña"/>
+          <input class="register--input" type="password" placeholder="Confirma Contraseña" />
+          <label>Pregunta secreta</label>
+          <select class="register--input" name="opciones" placeholder="Pregunta Secreta">
+            <option value="">¿Donde naciste?</option>
+            <option value="">¿Como se llamaba tu primer mascota?</option>
+          </select>
+          <input class="register--input" type="password" placeholder="Respuesta Secreta" />
+          <div class="register--terminos">
+            <input type="checkbox"><label>Acepto terminos y condiciones</label>
+
+          </div>
+          <input class="register--submit" type="submit" value="Registrar">
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer__container">
+      <a class="footer--item" href="">Terminos y Condiciones</a>
+      <a class="footer--item" href="">Declaracion de Privacidad</a>
+      <a class="footer--item" href="">Centro de Ayuda</a>
+      <a class="footer--item" href="">Preguntas Frecuentes</a>
+    </footer>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
