@@ -49,16 +49,16 @@
     <section class="register">
       <div class="register__container">
         REGISTRAR
-        <form class="register--form">
-           <input class="register--input" type="email" placeholder="Correo Electronico" />
-          <input class="register--input" type="password" placeholder="Contraseña"/>
-          <input class="register--input" type="password" placeholder="Confirma Contraseña" />
+        <form class="register--form" id="register__form">
+           <input class="register--input" name="email" type="email" placeholder="Correo Electronico" />
+          <input class="register--input" name="password" type="password" placeholder="Contraseña"/><!-- 
+          <input class="register--input" type="password" placeholder="Confirma Contraseña" /> -->
           <label>Pregunta secreta</label>
-          <select class="register--input" name="opciones" placeholder="Pregunta Secreta">
+          <!-- <select class="register--input" name="opciones" placeholder="Pregunta Secreta">
             <option value="">¿Donde naciste?</option>
             <option value="">¿Como se llamaba tu primer mascota?</option>
           </select>
-          <input class="register--input" type="password" placeholder="Respuesta Secreta" />
+          <input class="register--input" type="password" placeholder="Respuesta Secreta" /> -->
           <div class="register--terminos">
             <input type="checkbox"><label>Acepto terminos y condiciones</label>
 
@@ -66,6 +66,7 @@
           <input class="register--submit" type="submit" value="Registrar">
         </form>
       </div>
+      <button id="verUsuario" type="button" >Ver</button>
     </section>
 
     <footer class="footer__container">
@@ -74,6 +75,8 @@
       <a class="footer--item" href="">Centro de Ayuda</a>
       <a class="footer--item" href="">Preguntas Frecuentes</a>
     </footer>
-    <script src="../dist/main.js"></script>
+    <!-- <script src="../dist/main.js"></script> -->
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/login/register.js"></script>
   </body>
 </html>

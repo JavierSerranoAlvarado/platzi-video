@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplatzi_video=self.webpackChunkplatzi_video||[]).push([[739],{739:(a,e,l)=>{function s(a){"navbar-plegable"===a.className?a.className+=" navbar-plegable--open":a.className="navbar-plegable"}l.r(e),l.d(e,{Menu:()=>s})}}]);

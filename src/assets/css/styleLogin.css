@@ -1,3 +1,10 @@
+.login__registro{
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 980px;
+  margin:0 auto;
+}
+
 .login {
   display: flex;
   align-items: center;

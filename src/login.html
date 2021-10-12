@@ -10,8 +10,9 @@
       src="https://kit.fontawesome.com/2e5cc30c24.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/css/styleGlobal.css" />
+    <link rel="stylesheet" href="././assets/css/styleGlobal.css" />
     <link rel="stylesheet" href="./assets/css/styleLogin.css" />
+    <link rel="stylesheet" href="./assets/css/styleRegister.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -45,13 +46,14 @@
       </ul>
     </nav>
 
-
+<section class ="login__registro">
     <section class="login">
       <h2>Inicio de Sesion</h2>
       <div class="login__container">
         <form id="login__container--form" class="login__container--form">
           <input
             id="login_email"
+            name="login_email"
             type="email"
             class="login__container--input"
             placeholder="Correo Electronico"
@@ -59,6 +61,7 @@
           />
           <input
             id="login-pass"
+            name="login_pass"
             type="password"
             class="login__container--input"
             placeholder="Contraseña"
@@ -68,6 +71,7 @@
             class="login__container--submit"
             value="Iniciar Sesion"
           />
+          <p id="login_resultado"></p>
           <div class="login__container--remember">
             <label for="remember"><input id="remember" type="checkbox" /> Recuerdame</label>
             <a href="">Olvide mi Contraseña</a>
@@ -78,11 +82,37 @@
           <a href=""><i class="fab fa-google"></i>Inicia Sesion con Google</a>
           <a href=""><i class="fab fa-twitter"></i>Inicia Sesion Con Twitter</a>
         </section>
-        <section class="login__container--register">
+       <!--  <section class="login__container--register">
           <label>¿Aun no tienes cuenta? <a href="./register.html">Registrate</a></label>
-        </section>
+        </section> -->
       </div>
     </section>
+
+    <section class="register">
+      <div class="register__container">
+        REGISTRAR
+        <form class="register--form" id="register__form">
+           <input class="register--input" name="email" type="email" placeholder="Correo Electronico" />
+          <input class="register--input" name="password" type="password" placeholder="Contraseña"/><!-- 
+          <input class="register--input" type="password" placeholder="Confirma Contraseña" /> -->
+          <!--<label>Pregunta secreta</label>
+           <select class="register--input" name="opciones" placeholder="Pregunta Secreta">
+            <option value="">¿Donde naciste?</option>
+            <option value="">¿Como se llamaba tu primer mascota?</option>
+          </select>
+          <input class="register--input" type="password" placeholder="Respuesta Secreta" /> -->
+          <div class="register--terminos">
+            <input type="checkbox"><label>Acepto terminos y condiciones</label>
+
+          </div>
+          <input class="register--submit" type="submit" value="Registrar">
+        </form>
+        <p id="register_resultado"></p>
+      </div>
+     
+    </section>
+  </section>
+  <button id="verUsuario" type="button" >Ver</button>
 
     <footer class="footer__container">
       <a class="footer--item" href="">Terminos y Condiciones</a>
@@ -90,6 +120,9 @@
       <a class="footer--item" href="">Centro de Ayuda</a>
       <a class="footer--item" href="">Preguntas Frecuentes</a>
     </footer>
-    <script src="../dist/main.js"></script>
+
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/login/login.js"></script>
+    <script type="module" src="./js/login/register.js"></script>
   </body>
 </html>

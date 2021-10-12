@@ -55,6 +55,15 @@
     background:rgba(5, 178, 220, 0.9);
 }
 
+.resultado--error{
+    color: red;
+    font-size: bold;
+}
+
+.resultado--success{
+    color: green;
+}
+
 @media only screen and (max-width: 544px){
     .register__container{
         border:none;
